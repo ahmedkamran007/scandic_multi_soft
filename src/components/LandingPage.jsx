@@ -264,31 +264,31 @@ const LandingPage = () => {
               Client Testimonials
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-              Trusted by Businesses Worldwide
+              Trusted by Businesses
             </p>
           </div>
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                img: "https://randomuser.me/api/portraits/women/32.jpg",
-                name: "Sarah Johnson",
-                title: "CTO, TechSolutions Inc.",
+                img: "/images/mash.jpg",
+                name: "Mash ",
+                title: "Founder, Buyunik.dk",
                 quote:
-                  "Scandic MultiSoft transformed our legacy system into a modern microservice architecture...",
+                  "Scandic MultiSoft built a professional, high-quality website that elevated our brand.",
               },
               {
-                img: "https://randomuser.me/api/portraits/men/45.jpg",
-                name: "Michael Chen",
-                title: "CEO, RetailFlow",
+                img: "/images/kisa.jpg",
+                name: "Shahzad",
+                title: "Butik Owner, Kisa Marked",
                 quote:
-                  "Our eCommerce platform built with Java and React handles 10,000+ daily orders seamlessly...",
+                  "Our webshop built with Java and React handles many orders seamlessly...",
               },
               {
-                img: "https://randomuser.me/api/portraits/women/68.jpg",
-                name: "Emma Rodriguez",
-                title: "Founder, HealthTrack",
+                img: "/images/lego.jpg",
+                name: "Your Name",
+                title: "Founder, Your Business Name",
                 quote:
-                  "The scheduling system they developed for our clinic network has reduced no-shows by 30%...",
+                  "Scandic MultiSoft delivered outstanding results — professional, reliable, and impactful. The next success story could be yours!",
               },
             ].map((t, i) => (
               <div key={i} className="bg-white p-6 rounded-lg shadow-lg">
@@ -462,6 +462,8 @@ const LandingPage = () => {
           </div>
           <div className="mt-12 border-t border-gray-700 pt-8 flex justify-between">
             <p className="text-gray-400 text-sm">&copy; 2023 Scandic MultiSoft. All rights reserved.</p>
+             <p className="text-gray-400 text-sm">Delta Park 10, Vallensbæk Strand</p>
+             <p className="text-gray-400 text-sm">ahmed.kamran@hotmail.dk</p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Terms</a>
