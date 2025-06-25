@@ -119,7 +119,6 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { label: "Years Experience", value: "5+" },
-              { label: "Client Retention", value: "95%" },
               { label: "Support Available", value: "24/7" },
             ].map((stat, i) => (
               <div
@@ -241,7 +240,7 @@ const LandingPage = () => {
         Scandic MultiSoft is a newly founded software development studio committed to delivering innovative, scalable, and efficient technology solutions. We specialize in crafting full-stack enterprise applications, modern APIs, and startup-ready MVPs that help businesses of all sizes grow with confidence.
       </p>
     </div>
-
+    
     <div className="mt-12 max-w-3xl mx-auto text-left">
       <h3 className="text-lg leading-6 font-medium text-gray-900">
         Our Mission
@@ -254,6 +253,120 @@ const LandingPage = () => {
     </div>
   </div>
 </div>
+
+{/* Template Demos Section */}
+<div className="bg-white py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+        Template Demos
+      </h2>
+      <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Ready-to-Use Templates
+      </p>
+      <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+        Professionally designed templates for various industries
+      </p>
+    </div>
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      {/* Restaurant Template */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div className="h-40 bg-cover bg-center rounded-md flex items-end p-4" 
+             style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80)' }}>
+          <h3 className="text-white text-xl font-bold">Restaurant</h3>
+        </div>
+        <div className="mt-4">
+          <p className="text-gray-600 mb-3">Complete restaurant template with menu, booking system, and gallery</p>
+          <div className="flex justify-between items-center">
+            <div className="flex">
+              <i className="fas fa-utensils text-indigo-600 mr-2"></i>
+              <span className="text-sm text-gray-500">Food Business</span>
+            </div>
+            <button 
+              onClick={() => window.open('/templates/restaurant.html', '_blank')}
+              className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition text-sm"
+            >
+              View Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Other template like rent a car placeholders -  */}
+      
+<div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+  <div className="h-40 bg-cover bg-center rounded-md flex items-end p-4" 
+       style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80)' }}>
+    <h3 className="text-white text-xl font-bold">Rent a Car</h3>
+  </div>
+  <div className="mt-4">
+    <p className="text-gray-600 mb-3">Complete car rental template with vehicle listings, booking system, and availability calendar</p>
+    <div className="flex justify-between items-center">
+      <div className="flex">
+        <i className="fas fa-car text-indigo-600 mr-2"></i>
+        <span className="text-sm text-gray-500">Automotive</span>
+      </div>
+      <button 
+        onClick={() => window.open('/templates/car-rental.html', '_blank')}
+        className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition text-sm"
+      >
+        View Demo
+      </button>
+    </div>
+  </div>
+</div>
+
+      
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+  <div className="h-40 bg-cover bg-center rounded-md flex items-end p-4" 
+       style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80)' }}>
+    <h3 className="text-white text-xl font-bold">Beauty Salon</h3>
+  </div>
+  <div className="mt-4">
+    <p className="text-gray-600 mb-3">Complete salon template with services, booking system, and gallery</p>
+    <div className="flex justify-between items-center">
+      <div className="flex">
+        <i className="fas fa-scissors text-indigo-600 mr-2"></i>
+        <span className="text-sm text-gray-500">Salon</span>
+      </div>
+      <button 
+        onClick={() => window.open('/templates/salon.html', '_blank')}
+        className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition text-sm"
+      >
+        View Demo
+      </button>
+    </div>
+  </div>
+</div>
+      
+      
+<div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+  <div className="h-40 bg-cover bg-center rounded-md flex items-end p-4" 
+       style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80)' }}>
+    <h3 className="text-white text-xl font-bold">Fashion Store</h3>
+  </div>
+  <div className="mt-4">
+    <p className="text-gray-600 mb-3">Complete eCommerce template with product listings, cart system, and checkout</p>
+    <div className="flex justify-between items-center">
+      <div className="flex">
+        <i className="fas fa-shopping-bag text-indigo-600 mr-2"></i>
+        <span className="text-sm text-gray-500">Online Retail</span>
+      </div>
+      <button 
+        onClick={() => window.open('/templates/ecommerce.html', '_blank')}
+        className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition text-sm"
+      >
+        View Demo
+      </button>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
 
 
       {/* Testimonials Section */}
