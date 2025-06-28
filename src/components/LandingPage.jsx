@@ -69,52 +69,46 @@ const LandingPage = () => {
       </nav>
 
       {/* Hero Section */}
-      {/* Hero Section */}
+      
+{/* Hero Section */}
+{/* Hero Section */}
 <div className="relative bg-white overflow-hidden pt-24">
-  <div className="max-w-7xl mx-auto">
-    <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-      <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-16 lg:px-8 xl:mt-20">
-        <div className="sm:text-center lg:text-left">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            <span className="block">Enterprise-Grade</span>
-            <span className="block text-indigo-600">Software Solutions</span>
-          </h1>
-          <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Transforming Your Vision Into Reality.
-          </p>
-          <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div className="rounded-md shadow">
-              <a
-                href="#contact"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white gradient-bg hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-              >
-                Get a Free Consultation
-              </a>
-            </div>
-            <div className="mt-3 sm:mt-0 sm:ml-3">
-              <a
-                href="#services"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-              >
-                Our Services
-              </a>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+  {/* Light Background Image */}
+  <div className="absolute inset-0 opacity-10 z-0">
+    <img
+      src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
+      alt="Developer working late night"
+      className="w-full h-full object-cover"
+    />
   </div>
-  <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <div className="h-full w-full flex items-center justify-center">
-      <img
-        src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
-        alt="Developer working late night"
-        className="h-auto w-full max-w-full object-contain"
-      />
+
+  {/* Centered Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24 lg:py-32">
+    <div className="text-center">
+      <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+        <span className="block">Enterprise-Grade</span>
+        <span className="block text-indigo-600">Software Solutions</span>
+      </h1>
+      <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+        Transforming Your Vision Into Reality.
+      </p>
+      <div className="mt-5 sm:mt-8 flex justify-center space-x-4">
+        <a
+          href="#contact"
+          className="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white gradient-bg hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+        >
+          Get a Free Consultation
+        </a>
+        <a
+          href="#services"
+          className="px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+        >
+          Our Services
+        </a>
+      </div>
     </div>
   </div>
 </div>
-
       {/* The rest of the sections (Stats, Services, Testimonials, Contact, Footer) are next */}
 
       {/* Stats Section */}
