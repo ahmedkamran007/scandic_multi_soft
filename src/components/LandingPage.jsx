@@ -368,61 +368,69 @@ const LandingPage = () => {
 
 
       {/* Testimonials Section */}
-      <div className="gradient-bg py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-base text-indigo-200 font-semibold tracking-wide uppercase">
-              Client Testimonials
-            </h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-              Trusted by Businesses
-            </p>
-          </div>
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                img: "/images/mash.jpg",
-                name: "Mash ",
-                title: "Founder, Buyunik.dk",
-                quote:
-                  "Scandic MultiSoft built a professional, high-quality website that elevated our brand.",
-              },
-              {
-                img: "/images/kisa.jpg",
-                name: "Shahzad",
-                title: "Butik Owner, Kisa Marked",
-                quote:
-                  "Our webshop built with Java and React handles many orders seamlessly...",
-              },
-              {
-                img: "/images/lego.jpg",
-                name: "Your Name",
-                title: "Founder, Your Business Name",
-                quote:
-                  "Scandic MultiSoft delivered outstanding results — professional, reliable, and impactful. The next success story could be yours!",
-              },
-            ].map((t, i) => (
-              <div key={i} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center">
-                  <img
-                    className="h-12 w-12 rounded-full"
-                    src={t.img}
-                    alt={t.name}
-                  />
-                  <div className="ml-4">
-                    <h4 className="text-lg font-medium text-gray-900">
-                      {t.name}
-                    </h4>
-                    <p className="text-indigo-600">{t.title}</p>
-                  </div>
-                </div>
-                <p className="mt-4 text-gray-600">{t.quote}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
+      {/* Testimonials Section */}
+<div className="gradient-bg py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center">
+      <h2 className="text-base text-indigo-200 font-semibold tracking-wide uppercase">
+        Client Testimonials
+      </h2>
+      <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+        Trusted by Businesses
+      </p>
+    </div>
+    <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {[
+        {
+          img: "/images/mash.jpg",
+          name: "Mash",
+          title: "Founder, Buyunik",
+          quote: "Scandic MultiSoft built a professional, high-quality website that elevated our brand.",
+          link: "https://buyunik.netlify.app/"
+        },
+        {
+          img: "/images/kisa.jpg",
+          name: "Shahzad",
+          title: "Butik Owner, Kisa Marked",
+          quote: "Our webshop built with Java and React handles many orders seamlessly...",
+          link: "https://www.kisamarked.dk"
+        },
+        {
+          img: "/images/lego.jpg",
+          name: "Your Name",
+          title: "Founder, Your Business Name",
+          quote: "Scandic MultiSoft delivered outstanding results — professional, reliable, and impactful. The next success story could be yours!",
+          link: "#"
+        },
+      ].map((t, i) => (
+        <div key={i} className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="flex items-center">
+            <img
+              className="h-12 w-12 rounded-full"
+              src={t.img}
+              alt={t.name}
+            />
+            <div className="ml-4">
+              <h4 className="text-lg font-medium text-gray-900">
+                {t.name}
+              </h4>
+              <a 
+                href={t.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:text-indigo-800 hover:underline"
+              >
+                {t.title}
+              </a>
+            </div>
+          </div>
+          <p className="mt-4 text-gray-600">{t.quote}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
 
       {/* Contact Form */}
       <div id="contact" className="bg-white py-16">
